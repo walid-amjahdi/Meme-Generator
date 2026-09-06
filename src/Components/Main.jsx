@@ -8,13 +8,17 @@ export function Main()
 
     return (
         <>
-            <InputField input="Top text" value={topValue} typing={(event)=>{setTopValue(
-                event.target.value
-            )}}/>  
-            <InputField input="Bottom text" value={bottomValue} typing={(event)=>{setBottomValue(
-                event.target.value
-            )}}/>  
+        <main>
+            <div className="Inputfield">
+                <InputField input="Top text" value={topValue} typing={(event)=>{setTopValue(
+                    event.target.value
+                )}}/>  
+                <InputField input="Bottom text" value={bottomValue} typing={(event)=>{setBottomValue(
+                    event.target.value
+                )}}/>  
+            </div>
             <button className="SubmitButton">Get the Meme</button>
+        </main>
         </>
     )
 }
